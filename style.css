@@ -417,7 +417,7 @@ button.close {
 
 .features {
   padding: 3rem 0 1rem 0;
-  background-color: #CC3814;
+  background-color: #28324E;
   color: white;
 }
 
@@ -445,7 +445,7 @@ button.close {
 }
 
 .features__divider-bottom {
-  background-color: #28324E;
+  background-color: #fff;
 }
 
 .contact {
