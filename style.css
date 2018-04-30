@@ -172,6 +172,7 @@ h6 {
   font-size: 1.5rem;
   font-style: italic;
   color: #fff;
+  margin-bottom: 3rem;
 
 }
 
@@ -268,7 +269,20 @@ h6 {
   margin: 300px auto;
 }
 
+/* Navbar */
 
+nav#mainNav.navbar-shrink{
+  background-color: #282828;
+  color: #fff !important;
+}
+.nav-item.nav-link{
+  color: #fff;
+}
+.nav#mainNav.nav-link{
+  margin: 0.3rem;
+    margin-right: 0.3rem;
+margin-right: 1.6rem;
+}
 
 /* About us section */
 
@@ -616,20 +630,13 @@ img::-moz-selection {
   background: transparent;
 }
 
-#mainNav {
-  border-bottom: 1px solid rgba(33, 37, 41, 0.1);
-  background-color: #fff;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  transition: all 0.2s;
-}
+
 
 #mainNav .navbar-brand {
   font-weight: 700;
   text-transform: uppercase;
   color: #F05F40;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+ 
 }
 
 #mainNav .navbar-brand:focus,
@@ -639,10 +646,12 @@ img::-moz-selection {
 
 #mainNav .navbar-nav>li.nav-item>a.nav-link,
 #mainNav .navbar-nav>li.nav-item>a.nav-link:focus {
-  font-size: .9rem;
+  font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: #212529;
+  color: #fff;;
+  font-family: 'Lato', sans-serif;
+  margin: 0.3rem 1.6rem 0.3rem 0.3rem;
 }
 
 #mainNav .navbar-nav>li.nav-item>a.nav-link:hover,
@@ -661,49 +670,7 @@ img::-moz-selection {
   background-color: transparent;
 }
 
-@media (min-width: 992px) {
-  #mainNav {
-    border-color: transparent;
-    background-color: transparent;
-  }
-  #mainNav .navbar-brand {
-    color: rgba(255, 255, 255, 0.7);
-  }
-  #mainNav .navbar-brand:focus,
-  #mainNav .navbar-brand:hover {
-    color: #fff;
-  }
-  #mainNav .navbar-nav>li.nav-item>a.nav-link {
-    padding: 0.5rem 1rem;
-  }
-  #mainNav .navbar-nav>li.nav-item>a.nav-link,
-  #mainNav .navbar-nav>li.nav-item>a.nav-link:focus {
-    color: rgba(255, 255, 255, 0.7);
-  }
-  #mainNav .navbar-nav>li.nav-item>a.nav-link:hover,
-  #mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover {
-    color: #fff;
-  }
-  #mainNav.navbar-shrink {
-    border-bottom: 1px solid rgba(33, 37, 41, 0.1);
-    background-color: #fff;
-  }
-  #mainNav.navbar-shrink .navbar-brand {
-    color: #F05F40;
-  }
-  #mainNav.navbar-shrink .navbar-brand:focus,
-  #mainNav.navbar-shrink .navbar-brand:hover {
-    color: #f05f40;
-  }
-  #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link,
-  #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:focus {
-    color: #212529;
-  }
-  #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:hover,
-  #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:focus:hover {
-    color: #F05F40;
-  }
-}
+
 
 header.slider_small {
   padding-top: 10rem;
