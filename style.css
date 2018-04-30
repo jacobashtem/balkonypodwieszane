@@ -146,13 +146,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Lato', sans-serif !important;
+  font-family: 'Montserrat', sans-serif;
 }
 
-p {
-  font-family: 'Merriweather', serif !important;
-  font-size: 1.285rem;
-}
 
 /* Slider section */
 
@@ -161,38 +157,102 @@ p {
   min-height: 750px;
 }
 
-.slider_small__header {
-  font-size: 6rem;
-  font-style: italic;
-  font-weight: 100;
-  color: white;
+
+
+.slider_section--heading {
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4.5rem;
+  letter-spacing: -2px;
+  color: #fff;
 }
 
-.slider_small__content {
-  font-size: 2.1875rem;
+.slider_section--paragraph {
+  font-weight: 300;
+  font-size: 1.5rem;
   font-style: italic;
-  color: white;
+  color: #fff;
+
 }
 
-/* Slider big */
+.slider_section__button--first {
+  padding: 0.75rem 2.1874rem;
+  font-size: 0.9687rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  background-color: #f28281;
+  border-color: #f28281;
+  color: #ffffff;
+  margin-top: 1rem;
+}
+/* Buttons */
 
-.carousel-caption p {
-  font-size: 35px;
-  font-style: italic;
+.slider_section__button--first:hover {
+  color: #ffffff;
+  background-color: #eb3d3c;
+  border-color: #eb3d3c;
+  text-decoration: none;
 }
 
-@media only screen and (max-width: 500px) {
-  .slider_small__header {
+.slider_section__button--second {
+  background: none;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #fff;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.75rem 2.1874rem;
+  font-size: 0.9687rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  border: 1px solid #fff;
+  margin-left: 1rem;
+}
+
+.slider_section__button--second:hover {
+  color: #535353;
+  background-color: #fff;
+  border-color: #fff;
+  text-decoration: none;
+  padding: 0.75rem 2.1874rem;
+  font-size: 0.9687rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+/* Media Queries - Slider Section */
+
+@media only screen and (max-width: 668px) {
+  .slider_section--heading {
+    font-size: 2.8rem;
+    color: #fff;
+  }
+  .slider_section--paragraph  {
+    font-size: 1.3rem;
+    color:#fff;
+  }.slider_section__button--first{
+    margin:1rem;
+    display:block;
+  }.slider_section__button--second{
+    margin:1rem;
+    display:block;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .slider_section--heading {
     font-size: 3.5rem;
+    color: #fff;
   }
-  .slider_small__content {
-    font-size: 1.5rem;
+  .slider_section--paragraph  {
+    font-size: 1.6rem;
+    color:#fff;
+  }.slider_section__button--first{
+    margin:1rem;
+    display:block;
+  }.slider_section__button--second{
+    margin:1rem;
+    display:block;
   }
 }
 
-@media only screen and (min-width: 500px) {
-  .slider_small {}
-}
 
 .slider_big {
   height: 920px;
@@ -208,10 +268,7 @@ p {
   margin: 300px auto;
 }
 
-.carousel-caption p {
-  font-size: 35px;
-  font-style: italic;
-}
+
 
 /* About us section */
 
@@ -253,6 +310,7 @@ p {
     margin: auto;
     padding: 6rem 0 6rem 0;
   }
+  
 }
 
 /* Photo Section */
@@ -755,38 +813,6 @@ font-size: 3rem;
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     font-size: 22px;
   }
-}
-
-.btn-primary {
-  background-color: #F05F40 !important;
-  border-color: #F05F40 !important;
-}
-
-.btn {
-  font-weight: 700 !important;
-  text-transform: uppercase !important;
-  border: none !important;
-  border-radius: 300px !important;
-}
-
-.text-primary {
-  color: #F05F40 !important;
-}
-
-.btn-xl {
-  padding: 1rem 2rem !important;
-}
-
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active {
-  color: #fff !important;
-  background-color: #ee4b28 !important;
-}
-
-.btn-primary:active,
-.btn-primary:focus {
-  box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
 }
 
 .features__divider-bottom {
