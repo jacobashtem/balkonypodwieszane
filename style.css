@@ -322,10 +322,11 @@ nav#mainNav.navbar-shrink {
     margin: 0 auto;
     padding: 5%;
     font-size: 3rem;
+    margin-left:1rem;
   }
   .about_us__paragraph {
     padding: 5%;
-    font-size: 1rem;
+    
   }
   .about_us {
     margin: auto;
@@ -335,7 +336,7 @@ nav#mainNav.navbar-shrink {
   }
 }
 
-/ //* Photo Section */
+/* Photo Section */
 .photo_section {
   color: white;
   padding-left: 0px;
@@ -377,6 +378,7 @@ nav#mainNav.navbar-shrink {
   }
   .photo_section__subtitle {
     font-size: 1.2rem;
+    text-align:center;
   }
   .photo_section__content {
     padding: 6.25rem 0 6.25rem 0;
@@ -416,10 +418,11 @@ nav#mainNav.navbar-shrink {
     margin: 0 auto;
     padding: 5%;
     font-size: 3rem;
+    margin-left:1rem;
   }
   .portfolio_section__paragraph{
     padding: 5%;
-    font-size: 1rem;
+  
     width:100%;
   }
   .portfolio_section {
@@ -443,22 +446,16 @@ nav#mainNav.navbar-shrink {
 /* Features section  */
 
 features_section{
-  margin: auto;
-  padding: 6.5rem 0 6.5rem 0;
-  margin-top: 80px;
-  margin-bottom: 120px;
+
 }
 .features_section__header {
-  margin:0 auto;
+  margin: auto auto 2rem auto;
   font-size: 4.5rem;
   line-height: 1.5;
   font-weight: 600;
   border-left: 8px solid #28324E;
   font-family: 'Montserrat', sans-serif;
-  padding: 0 0 0 1.3rem;
-}
-.features_section> div.row{
-  margin-bottom:3.5rem;
+  padding: 0 0 1rem 1.3rem;
 }
 .features_section__paragraph{
   line-height: 1.5;
@@ -479,6 +476,18 @@ features_section{
   text-align: center;
   font-weight:700;
   }
+  @media only screen and (max-width: 680px) {
+    .features_section__header {
+      margin: 0 auto;
+      padding: 5%;
+      font-size: 3rem;
+      text-align:center;
+      margin-bottom: 2rem;
+      margin-left:1rem;
+    }
+
+    }
+
 
 /* Katalog */
 
@@ -487,7 +496,9 @@ features_section{
   color: white;
   align-content: center;
   margin: auto;
-  padding: 7rem 0 7rem 0;
+  padding: 8rem 0 8rem 0;
+  margin-top:60px;
+  margin-bottom:120px;
 }
 
 .catalogue_section__title {
@@ -522,23 +533,6 @@ features_section{
   border-color: #eb3d3c;
   text-decoration: none;
 }
-.portfolio-button {
-  margin: 3%;
-  color: #ffffff;
-  background-color: #eb3d3c;
-  border-color: #eb3d3c;
-  padding: 10px 30px 0 30px;
-}
-
-.portfolio-button p {
-  padding: 10px;
-  letter-spacing: 2px;
-  font-size: 1rem;
-  ;
-  border-radius: 3px;
-}
-
-
 
 /* Contact section */
 .contact {
