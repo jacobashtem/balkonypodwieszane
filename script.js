@@ -1,6 +1,12 @@
 $(document).ready(function() {
 
-    // Gets the video src from the data-src on each button
+  $('.grid').masonry({
+    // options
+    itemSelector: '.grid-item',
+    columnWidth: 340
+  });  
+  
+  // Gets the video src from the data-src on each button
     var $imageSrc;  
     $('.gallery img').click(function() {
         $imageSrc = $(this).data('bigimage');
