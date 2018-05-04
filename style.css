@@ -439,9 +439,50 @@ nav#mainNav.navbar-shrink {
 
 
 
+
+/* Features section  */
+
+features_section{
+  margin: auto;
+  padding: 6.5rem 0 6.5rem 0;
+  margin-top: 80px;
+  margin-bottom: 120px;
+}
+.features_section__header {
+  margin:0 auto;
+  font-size: 4.5rem;
+  line-height: 1.5;
+  font-weight: 600;
+  border-left: 8px solid #28324E;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 0 0 1.3rem;
+}
+.features_section> div.row{
+  margin-bottom:3.5rem;
+}
+.features_section__paragraph{
+  line-height: 1.5;
+  padding: .3rem 10% 10% 3%;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #232323;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+.img-center {
+  margin: 0 auto;
+  display: block;
+}
+.features_section__title {
+  text-align: center;
+  font-weight:700;
+  }
+
 /* Katalog */
 
-.catalog_section {
+.catalogue_section {
   background: #28324E;
   color: white;
   align-content: center;
@@ -449,14 +490,14 @@ nav#mainNav.navbar-shrink {
   padding: 7rem 0 7rem 0;
 }
 
-.catalog_section__title {
+.catalogue_section__title {
   align-content: center;
   margin: 0 auto;
   font-size: 48px;
   line-height: 1.5;
 }
 
-.catalog_section__subtitle {
+.catalogue_section__paragraph {
   margin: 0 auto;
   align-content: center;
   padding: 1.5rem 0 1.5rem 0;
@@ -464,6 +505,23 @@ nav#mainNav.navbar-shrink {
   font-weight: 100;
 }
 
+.catalogue_section__button {
+  padding: 0.75rem 2.1874rem;
+  font-size: 0.9687rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  background-color: #f28281;
+  border-color: #f28281;
+  color: #ffffff;
+  margin-top: 1rem;
+}
+
+.catalogue_section__button:hover {
+  color: #ffffff;
+  background-color: #eb3d3c;
+  border-color: #eb3d3c;
+  text-decoration: none;
+}
 .portfolio-button {
   margin: 3%;
   color: #ffffff;
@@ -480,41 +538,9 @@ nav#mainNav.navbar-shrink {
   border-radius: 3px;
 }
 
-.features {
-  padding: 3rem 0 1rem 0;
-  background-color: #28324E;
-  color: white;
-}
-
-/* Features section  */
-
-.features_section__header {
-  color: white;
-  margin: 0 auto;
-  text-align:center;
-  line-height: 1.5;
-  font-weight: 100;
-  font-size: 3.5rem;
-  line-height: 1.5;
-  font-weight: 600;
-  border-left: 4px solid #fff;
-  font-family: 'Montserrat', sans-serif;
-  padding: 0 0 0 1.3rem;
-}
-
-.img-center {
-  margin: 0 auto;
-  display: block;
-}
-
-.features__title {}
-
-.features__description {
-  padding: 1rem;
-}
 
 
-
+/* Contact section */
 .contact {
   background-color: #28324E;
 }
