@@ -281,16 +281,17 @@
         </div>
         <div class="col-xs-12 col-sm-4">
           <!-- Contact Form-->
-          <form class="contact_form" action="mailto:jakubasztemborski@gmail.com" method="post">
+          <form id="contact-form" class="contact_form" name="myForm" method="post" action="form.php" onsubmit="return(validate())">
             <div class="form-group">
               <label class=" control-label" for="Email"></label>
-              <input id="Email" name="Email" placeholder="Wpisz swój email" class="form-control" required="" type="text">
-
+              <input id="email" name="email" placeholder="Wpisz swój email" class="form-control" required=""  type="text">
+              <span id="emailError" style="display: none ;">You must enter a valid email address</span>  
+            </fieldset> 
             </div>
             <div class="form-group">
               <label class=" control-label" for="textarea"> </label>
               <div class="">
-                <textarea rows="6" class="form-control" placeholder="Twoja wiadomość..." id="textarea" name="textarea"></textarea>
+                <textarea rows="6" class="form-control" placeholder="Twoja wiadomość..." id="message" name="message"></textarea>
               </div>
             </div>
 
@@ -316,12 +317,9 @@
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
   <script src="script.js"></script>
-  <script>
-    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
-      event.preventDefault();
-      $(this).ekkoLightbox();
-    });
-  </script>
+  <script src="scrollspy.min.js"></script>
+
+
 </body>
 
 </html>
