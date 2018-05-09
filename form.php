@@ -1,6 +1,6 @@
 <?php
 $errors = '';
-$myemail = 'jakubasztemborski@gmail.com';
+$myemail = 'balkonypodwieszane@gmail.com';
 if(empty($_POST['email']) ||
    empty($_POST['message']))
 {
@@ -18,11 +18,10 @@ $email_address))
 if( empty($errors))
 {
 $to = $myemail;
-$email_subject = "Contact form submission:";
-$email_body = "You have received a new message. ".
-" Here are the details:\n".
-"Email: $email_address\n Message \n $message";
-$headers = "From: $myemail\n";
+$email_subject = "Balkonypodwieszane.pl Nowe zapytanie:";
+$email_body = "Otrzymałes nowe zapytanie:".
+"Email: $email_address\n Wiadomosc: \n $message";
+$headers = "Od: $myemail\n";
 $headers .= "Reply-To: $email_address";
 mail($to,$email_subject,$email_body,$headers);
 //redirect to the 'thank you' page
