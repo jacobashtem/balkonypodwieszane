@@ -20,49 +20,17 @@ function validate() {
 
 }
 $(document).ready(function () {
-
-  const menu = document.querySelector('.navbar');
+  $('.carousel').carousel({
+    interval: 8000
+  })
+  var menu = document.querySelector('.navbar');
   scrollSpy(menu);
   $(document).on('click', '[data-toggle="lightbox"]', function (event) {
     event.preventDefault();
     $(this).ekkoLightbox();
   });
-  
 
 
-
-
-
-  // Gets the video src from the data-src on each button
-  var $imageSrc;
-  $('.gallery img').click(function () {
-    $imageSrc = $(this).data('bigimage');
-  });
-  console.log($imageSrc);
-
-
-
-  // when the modal is opened autoplay it  
-  $('#myModal').on('shown.bs.modal', function (e) {
-
-    // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
-
-    $("#image").attr('src', $imageSrc);
-  })
-
-
-  // reset the modal image
-  $('#myModal').on('hide.bs.modal', function (e) {
-    // a poor man's stop video
-    $("#image").attr('src', '');
-  })
-
-
-
-
-
-
-  // document ready  
 });
 
 (function ($) {
@@ -73,12 +41,6 @@ $(document).ready(function () {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: (target.offset().top - 57)
-        }, 1000, "easeInOutExpo");
-        return false;
-      }
     }
   });
 

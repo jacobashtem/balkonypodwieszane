@@ -190,7 +190,7 @@ nav#mainNav.navbar-shrink {
 
 .about_us__paragraph {
   line-height: 1.5;
-  padding: 10% 10% 10% 3%;
+  /* padding: 10% 10% 10% 3%; */
   margin-top: 3.5rem;
   font-size: 1.2rem;
   font-weight: 300;
@@ -526,6 +526,7 @@ textarea#textarea.form-control{
   font-family: 'Lato', sans-serif;
   margin: 0.3rem 1.6rem 0.3rem 0.3rem;
 }
+
 
 #mainNav .navbar-nav>li.nav-item>a.nav-link:hover,
 #mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover {
